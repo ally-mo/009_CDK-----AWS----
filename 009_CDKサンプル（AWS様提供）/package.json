@@ -1,0 +1,33 @@
+{
+  "name": "ccoe-iac-cdk",
+  "version": "0.1.0",
+  "bin": {
+    "ccoe-iac-cdk": "bin/ccoe-iac-cdk.js"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/ts-node src/build.ts",
+    "prebuild": "./node_modules/.bin/ts-node src/prebuild.ts",
+    "deploy": "cdk deploy --all",
+    "test": "jest --coverage",
+    "lint": "eslint --ext \".js,.ts\" --ignore-path .gitignore .",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "sample": "echo 'hello world'"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "20.14.9",
+    "aws-cdk": "2.149.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.5",
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
+    "typescript": "~5.5.3"
+  },
+  "dependencies": {
+    "@apidevtools/swagger-parser": "^10.1.0",
+    "aws-cdk-lib": "2.149.0",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.21"
+  }
+}
