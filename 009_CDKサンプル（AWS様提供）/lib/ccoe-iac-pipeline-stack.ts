@@ -23,6 +23,7 @@ export default class CcoeIacPipelineStack extends cdk.Stack {
                     'npm install -g aws-cdk',
                     'npm install -g npm'
                 ],
+                
                 commands: [
                     'npm ci',
                     'npm run build',
